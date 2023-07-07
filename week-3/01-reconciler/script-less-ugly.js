@@ -4,7 +4,7 @@ function createDomElements(data) {
 
   // Get the current children of the parent element and convert it to an array
   var currentChildren = Array.from(parentElement.children);
-
+  console.log(currentChildren);
   let added = 0, deleted = 0, updated = 0;
   // Process each item in the data array
   data.forEach(function(item) {
@@ -69,3 +69,15 @@ window.setInterval(() => {
 
   createDomElements(todos)
 }, 5000)
+
+
+// let todos = [];
+//   for (let i = 0; i<Math.floor(Math.random() * 100); i++) {
+//     todos.push({
+//       title: "Go to gym",
+//       description: "Go to gym form 5",
+//       id: i+1
+//     })
+//   }
+
+//   createDomElements(todos)
